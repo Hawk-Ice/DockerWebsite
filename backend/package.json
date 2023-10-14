@@ -1,0 +1,11 @@
+{
+  "name": "simple-backend",
+  "version": "1.0.0",
+  "description": "A simple Node.js backend",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "http": "^0.0.0"
+  }
+}

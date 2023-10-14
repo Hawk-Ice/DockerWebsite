@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Web App</title>
+</head>
+<body>
+  <h1>Simple Web App</h1>
+  <p>Response from the backend:</p>
+  <div id="response"></div>
+
+  <script>
+    // JavaScript code to make a request to the backend
+    fetch('/api/hello') // This assumes your backend responds at the /api/hello endpoint
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('response').textContent = data;
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('response').textContent = 'Error occurred.';
+      });
+  </script>
+</body>
+</html>
